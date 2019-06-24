@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'app/content/bootstrap.min.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'movieapp/content/site.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'movieapp/content/mysite.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'movieapp/content/detail.css' %}" />
     <script src="{% static 'app/scripts/modernizr-2.6.2.js' %}"></script>
 </head>
 
@@ -38,13 +39,16 @@
 {% block content %}{% endblock %}
             </div>
         </div>
+
     <div id="footer"><div class="wrap"><p>© 2019 <strong>电影库</strong>. All rights reserved.</p><p></p><p>电影库——最新高清迅雷电影电视剧网站</p><p>本站所有资源来自互联网，如果无意中侵犯了您的权利，请与我们联系</p></div></div>
 
 
     <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
     <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
     <script src="{% static 'app/scripts/respond.js' %}"></script>
-{% block scripts %}{% endblock %}
+        <script src="{% static 'movieapp/js/.js' %}"></script>
+ 
+    {% block scripts %}{% endblock %}
 
 </body>
 </html>
