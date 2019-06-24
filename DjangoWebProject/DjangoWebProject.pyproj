@@ -84,6 +84,7 @@
     <Folder Include="movieapp\static\" />
     <Folder Include="movieapp\static\movieapp\" />
     <Folder Include="movieapp\static\movieapp\content\" />
+    <Folder Include="movieapp\static\movieapp\images\" />
     <Folder Include="movieapp\static\movieapp\js\" />
     <Folder Include="movieapp\templates\" />
     <Folder Include="movieapp\templates\movieapp\" />
@@ -91,9 +92,15 @@
   <ItemGroup>
     <Content Include="blog\templates\blog\index.html" />
     <Content Include="db.sqlite3" />
+    <Content Include="movieapp\static\movieapp\content\core.css" />
     <Content Include="movieapp\static\movieapp\content\detail.css" />
     <Content Include="movieapp\static\movieapp\content\mysite.css" />
+    <Content Include="movieapp\static\movieapp\content\reset.css" />
     <Content Include="movieapp\static\movieapp\content\site.css" />
+    <Content Include="movieapp\static\movieapp\content\willesPlay.css" />
+    <Content Include="movieapp\static\movieapp\images\control_01.png" />
+    <Content Include="movieapp\static\movieapp\images\playheader.jpg" />
+    <Content Include="movieapp\static\movieapp\js\willesPlay.js" />
     <Content Include="movieapp\templates\movieapp\detail.html" />
     <Content Include="movieapp\templates\movieapp\index.html" />
     <Content Include="movieapp\templates\movieapp\layout.html" />
