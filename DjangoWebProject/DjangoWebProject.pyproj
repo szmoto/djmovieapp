@@ -41,6 +41,12 @@
     <Compile Include="movieapp\apps.py" />
     <Compile Include="movieapp\migrations\__init__.py" />
     <Compile Include="movieapp\models.py" />
+    <Compile Include="movieapp\templatetags\getdisplay.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="movieapp\templatetags\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="movieapp\tests.py" />
     <Compile Include="movieapp\urls.py">
       <SubType>Code</SubType>
@@ -52,6 +58,9 @@
     <Folder Include="DjangoWebProject\" />
     <Folder Include="movieapp\" />
     <Folder Include="movieapp\migrations\" />
+    <Folder Include="movieapp\static\movieapp\fonts\" />
+    <Folder Include="movieapp\static\movieapp\scripts\" />
+    <Folder Include="movieapp\templatetags\" />
     <Folder Include="movieapp\static\" />
     <Folder Include="movieapp\static\movieapp\" />
     <Folder Include="movieapp\static\movieapp\content\" />
@@ -61,15 +70,36 @@
     <Folder Include="movieapp\templates\movieapp\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="movieapp\static\movieapp\content\bootstrap.css" />
+    <Content Include="movieapp\static\movieapp\content\bootstrap.min.css" />
     <Content Include="movieapp\static\movieapp\content\core.css" />
     <Content Include="movieapp\static\movieapp\content\detail.css" />
     <Content Include="movieapp\static\movieapp\content\mysite.css" />
     <Content Include="movieapp\static\movieapp\content\reset.css" />
     <Content Include="movieapp\static\movieapp\content\site.css" />
     <Content Include="movieapp\static\movieapp\content\willesPlay.css" />
+    <Content Include="movieapp\static\movieapp\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="movieapp\static\movieapp\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="movieapp\static\movieapp\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="movieapp\static\movieapp\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="movieapp\static\movieapp\images\control_01.png" />
     <Content Include="movieapp\static\movieapp\images\playheader.jpg" />
     <Content Include="movieapp\static\movieapp\js\willesPlay.js" />
+    <Content Include="movieapp\static\movieapp\scripts\bootstrap.js" />
+    <Content Include="movieapp\static\movieapp\scripts\bootstrap.min.js" />
+    <None Include="movieapp\static\movieapp\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="movieapp\static\movieapp\scripts\jquery-1.10.2.js" />
+    <Content Include="movieapp\static\movieapp\scripts\jquery-1.10.2.min.js" />
+    <Content Include="movieapp\static\movieapp\scripts\jquery-1.10.2.min.map" />
+    <None Include="movieapp\static\movieapp\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="movieapp\static\movieapp\scripts\jquery.validate.js" />
+    <Content Include="movieapp\static\movieapp\scripts\jquery.validate.min.js" />
+    <Content Include="movieapp\static\movieapp\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="movieapp\static\movieapp\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="movieapp\static\movieapp\scripts\modernizr-2.6.2.js" />
+    <Content Include="movieapp\static\movieapp\scripts\respond.js" />
+    <Content Include="movieapp\static\movieapp\scripts\respond.min.js" />
+    <None Include="movieapp\static\movieapp\scripts\_references.js" />
     <Content Include="movieapp\templates\movieapp\detail.html" />
     <Content Include="movieapp\templates\movieapp\index.html" />
     <Content Include="movieapp\templates\movieapp\layout.html" />

@@ -1,4 +1,5 @@
 ﻿{% extends "movieapp/layout.html" %}
+{% load getdisplay %}
 
 {% block content %}
 
@@ -13,7 +14,7 @@
             {% url 'movie:detail' item.id as the_url %}
             <li><a href="{{the_url}}" title="{{item.title}}" rel="bookmark">
               <div class="top-posters"><img src="{{item.img}}" alt="{{item.title}}" height="170" width="120" original="{{item.img}}"></div>
-              <div class="cap">{{item.title}}</div></a><div class="entry-rating">{{item.filehd}}</div></li>
+              <div class="cap">{{item.title}}</div></a><div class="entry-rating">{{item|displayName:"filehd"}}</div></li>
         {% endfor %}
           
           <li class="end"><a href="https://www.xl720.com/thunder/35521.html" title="女孩 Girl (2018) 迅雷下载" rel="bookmark">

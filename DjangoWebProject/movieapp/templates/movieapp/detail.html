@@ -1,26 +1,28 @@
 ﻿{% extends "movieapp/layout.html" %}
+{% load getdisplay %}
 
 {% block content %}
+
 <div id="content" role="main">
         <div id="post-35800" class="entry lazyload">
          <h1 class="postli-1">{{movie.title}}</h1>
     <div class="entry-meta clearfix">
-        <span class="meta-author">类型：<a href="https://www.xl720.com/category/juqingpian" rel="category tag">剧情片</a></span>
+        <span class="meta-author">类型：<a href="https://www.xl720.com/category/juqingpian" rel="category tag">{{movie|displayName:"mvtype"}}</a></span>
         <span class="meta-sep">|</span> <span class="meta-date" title="{{movie.pub_date}}">发布：{{movie.pub_date}}</span>
-        <span class="meta-sep">|</span> <span class="meta-comments"><a href="https://www.xl720.com/thunder/35800.html#respond">去抢片子</a></span> 
-        <span class="meta-sep">|</span> <span class="meta-comments"><a href="https://movie.douban.com/subject/26958485/" target="_blank" rel="nofollow">豆瓣影评</a></span>
+        <span class="meta-sep">|</span> <span class="meta-comments"><a href="https://www.xl720.com/thunder/{{movie.xl720_id}}.html#respond" target="_blank" rel="nofollow">去抢片子</a></span> 
+        <span class="meta-sep">|</span> <span class="meta-comments"><a href="https://movie.douban.com/subject/{{movie.db_id}}/" target="_blank" rel="nofollow">豆瓣影评</a></span>
     </div>
     <div class="entry-content">
       <div class="subject">
         <div id="mainpic">
             <img class="alignnone size-full wp-image-35801" src="{{movie.img}}" alt="逆流大叔 (2018)" width="150" height="210" original="https://www.xl720.com/uploads/2019/06/p2560176927.jpg">
-            <p class="entry-rating">豆瓣 <strong>{{movie.star}}</strong> 分</p>
+            <p class="entry-rating">豆瓣 <strong>{{movie.star|db_star}}</strong> 分</p>
         </div>
         <div id="info">导演: <a href="https://www.xl720.com/thunder/writers/%e9%99%88%e5%92%8f%e7%87%8a" rel="bookmark">{{movie.director}}</a>
             <br> 主演: {{movie.actors}}
-            <br> 类型: 剧情
-            <br> 制片国家/地区: <a href="https://www.xl720.com/thunder/area/xianggang" rel="bookmark">香港</a>
-            <br> 语言: {{movie.language}}
+            <br> 类型: {{movie|displayName:"mvtype"}}
+            <br> 制片国家/地区: <a href="https://www.xl720.com/thunder/area/xianggang" rel="bookmark">{{movie|displayName:"mvarea"}}</a>
+            <br> 语言: {{movie|displayName:"language"}}
             <br> 上映日期: {{movie.startyear}}(中国大陆) / <a href="https://www.xl720.com/thunder/years/2018" rel="bookmark">2018</a>-08-02(香港)
         </div>
         <div class="gray" style="clear: bothfloat: left;"><a href="javascript:;" onclick="slideDiv();return false;" id="m_txt">&gt;&gt; 更多 &lt;&lt;</a></div>
