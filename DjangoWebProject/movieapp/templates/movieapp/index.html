@@ -12,15 +12,11 @@
         <ul>
         {% for item in hotmovies %}
             {% url 'movie:detail' item.id as the_url %}
-            <li><a href="{{the_url}}" title="{{item.title}}" rel="bookmark">
+            <li {% if forloop.counter == 7 or forloop.counter == 14 %}class="end"{% endif%}><a href="{{the_url}}" title="{{item.title}}" rel="bookmark">
               <div class="top-posters"><img src="{{item.img}}" alt="{{item.title}}" height="170" width="120" original="{{item.img}}"></div>
               <div class="cap">{{item.title}}</div></a><div class="entry-rating">{{item|displayName:"filehd"}}</div></li>
-        {% endfor %}
-          
-          <li class="end"><a href="https://www.xl720.com/thunder/35521.html" title="女孩 Girl (2018) 迅雷下载" rel="bookmark">
-              <div class="top-posters"><img src="https://www.xl720.com/uploads/timthumb.php?src=https://www.xl720.com/uploads/2019/06/p2519456723.jpg&amp;h=170&amp;w=120&amp;zc=1" alt="女孩 Girl (2018)" height="170" width="120" original="https://www.xl720.com/uploads/timthumb.php?src=https://www.xl720.com/uploads/2019/06/p2519456723.jpg&amp;h=170&amp;w=120&amp;zc=1"></div>
-              <div class="cap">女孩</div></a><div class="entry-rating">BD/720P/1080P</div></li>
-          </ul>
+        {% endfor %}       
+        </ul>
     </div></div>
 </div>
 

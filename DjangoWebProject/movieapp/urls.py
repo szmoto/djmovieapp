@@ -11,7 +11,7 @@ urlpatterns = [
     url(r'^$',
         movieapp.views.index,
         name='home'),
-    url(r'^(?P<pk>\d+)/$',
+    url(r'^movie/(?P<pk>\d+)/$',
         movieapp.views.detail,
         name='detail'),
 ]

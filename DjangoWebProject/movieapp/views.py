@@ -4,7 +4,7 @@ from movieapp.models import Movie
 # Create your views here.
 
 def index(request):
-    mvs = Movie.objects.all()[:10]
+    mvs = Movie.objects.all()[:14]
     return render(
         request,
         'movieapp/index.html',
