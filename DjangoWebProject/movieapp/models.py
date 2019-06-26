@@ -7,8 +7,8 @@ from django.db import models
 class Movie(models.Model):
     """Movie model for movieapp"""
     issrt_choice = (
-        (0, '否'),
-        (1, '是'),
+        (0, '是'),
+        (1, '否'),
     )
     language_choice = (
         (0, '国语'),
@@ -54,6 +54,7 @@ class Movie(models.Model):
     star = models.IntegerField(u'豆瓣评分',default=0)
     xl720_id=models.IntegerField(u'迅雷ID',default=0)
     db_id=models.IntegerField(u'豆瓣ID',default=0)
+    is_mv = models.IntegerField(u'是否电影',choices=issrt_choice,default=0)
     pub_date = models.DateTimeField(u'记录时间',auto_now_add=True)
 
     def __unicode__(self):

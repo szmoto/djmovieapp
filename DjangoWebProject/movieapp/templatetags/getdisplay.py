@@ -10,3 +10,8 @@ def displayName(value, arg):
 @register.filter
 def db_star(value):
     return value/10
+
+@register.filter
+def setEndClass(value,count):
+    if value % int(count) ==0 :
+        return "class=end"
